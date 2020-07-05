@@ -1,7 +1,9 @@
 import discord
 import os
 
+
 client = discord.client
+
 
 @client.event
 async def on_ready():
