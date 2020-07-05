@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.client
 
@@ -16,5 +17,5 @@ async def on_message(message):
             choose = await message.channel.send('```' + vote[i] + '```')
         await message.channel.send("(원하는 이모지를 추가하시오.)")
 
-
-client.run("NzI4NjAxNzYxMTIzNjYzODgy.Xv8xTQ.GChXzcuPVqE-vYDO6Ar17EW5RUU")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
