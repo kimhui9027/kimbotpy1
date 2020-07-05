@@ -6,7 +6,7 @@ client = discord.client
 @client.event
 async def on_ready():
     print("ready")
-    game = discord.Game("".투표 투표주제.투표1.투표2.투표3.~"을 쳐서 투표를 하실 수 있습니다!")
+    game = discord.Game("'.투표 투표주제.투표1.투표2.투표3.~'을 쳐서 투표를 하실 수 있습니다!")
 
 @client.event
 async def on_message(message):
