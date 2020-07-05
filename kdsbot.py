@@ -19,5 +19,5 @@ async def on_message(message):
             choose = await message.channel.send('```' + vote[i] + '```')
         await message.channel.send("(원하는 이모지를 추가하시오.)")
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+accesstoken = os.environ["BOT_TOKEN"]
+client.run(accesstoken)
